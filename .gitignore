@@ -1,0 +1,21 @@
+# Virtual environments
+24RP15116/
+venv/
+env/
+ENV/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# ML artifacts
+catboost_info/
+*.pkl
+*.joblib
+
+# OS files
+.DS_Store
+Thumbs.db
