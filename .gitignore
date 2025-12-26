@@ -124,24 +124,24 @@ dmypy.json
 .pyre/
 
 # Machine Learning specific
-*.pkl
-*.pickle
-*.joblib
-*.h5
+#*.pkl
+#*.pickle
+#*.joblib
+#*.h5
 *.hdf5
 *.onnx
 *.pb
-*.pth
+#*.pth
 *.weights
 
 # Data files
-*.csv
-*.json
-*.xml
-*.xlsx
-*.xls
-data/
-datasets/
+#*.csv
+#*.json
+#*.xml
+#*.xlsx
+#*.xls
+#data/
+#datasets/
 raw_data/
 
 # Model checkpoints
