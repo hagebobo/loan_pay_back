@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 26, 2025 at 07:06 PM
+-- Generation Time: Dec 28, 2025 at 12:45 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -56,14 +56,12 @@ CREATE TABLE `predictions` (
 --
 
 INSERT INTO `predictions` (`id`, `user_id`, `applicant_name`, `annual_income`, `debt_to_income_ratio`, `credit_score`, `loan_amount`, `interest_rate`, `gender`, `marital_status`, `education_level`, `employment_status`, `loan_purpose`, `grade_subgrade`, `prediction`, `probability_paid_back`, `probability_not_paid_back`, `confidence`, `prediction_type`, `batch_id`, `created_at`) VALUES
-(1, 'Bobo', 'Bobo', 5000.00, 0.35, 700, 2000.00, 10.00, 'Male', 'Single', 'Bachelor\'s', 'Employed', 'Education', 'A1', 'Will Pay Back', 0.7607, 0.2393, 0.7607, 'single', NULL, '2025-12-26 15:22:14'),
-(2, 'Bobo', 'Fidel', 75000.00, 0.20, 750, 15000.00, 5.50, 'Male', 'Married', 'Bachelor\'s', 'Employed', 'Home', 'A1', 'Will Pay Back', 0.8640, 0.1360, 0.8640, 'single', NULL, '2025-12-26 15:43:18'),
-(3, 'Bobo', 'Alice Brown ', 95000.00, 0.15, 800, 20000.00, 4.50, 'Female', 'Married', 'Master\'s', 'Employed', 'Business', 'A1', 'Will Pay Back', 0.9863, 0.0137, 0.9863, 'single', NULL, '2025-12-26 16:40:33'),
-(4, 'Bobo', 'John Doe', 500000.00, 0.30, 720, 250000.00, 5.50, 'Male', 'Single', 'Bachelor\'s', 'Employed', 'Home', 'A1', 'Will Pay Back', 0.6128, 0.3872, 0.6128, 'batch', 'batch_1766767359438', '2025-12-26 16:42:40'),
-(5, 'Bobo', 'Jane Smith', 800000.00, 0.25, 680, 300000.00, 6.00, 'Female', 'Married', 'Master\'s', 'Self-Employed', 'Auto', 'B2', 'Will Pay Back', 0.9460, 0.0540, 0.9460, 'batch', 'batch_1766767359438', '2025-12-26 16:42:40'),
-(6, 'Bobo', 'Mark Brown', 300000.00, 0.40, 650, 150000.00, 7.00, 'Male', 'Divorced', 'High School', 'Unemployed', 'Education', 'C1', 'Will Pay Back', 0.7141, 0.2859, 0.7141, 'batch', 'batch_1766767359438', '2025-12-26 16:42:40'),
-(7, 'Bobo', 'Lisa White', 600000.00, 0.20, 700, 200000.00, 5.00, 'Female', 'Single', 'Bachelor\'s', 'Employed', 'Business', 'B1', 'Will Pay Back', 0.8881, 0.1119, 0.8881, 'batch', 'batch_1766767359438', '2025-12-26 16:42:41'),
-(8, 'Bobo', 'Paul Green', 450000.00, 0.35, 710, 180000.00, 6.50, 'Male', 'Married', 'Master\'s', 'Employed', 'Other', 'C2', 'Will Pay Back', 0.7178, 0.2822, 0.7178, 'batch', 'batch_1766767359438', '2025-12-26 16:42:41');
+(1, 'Bobo', ' Alice Brown', 95000.00, 0.15, 800, 20000.00, 4.48, 'Female', 'Married', 'Master\'s', 'Employed', 'Business', 'A1', 'Will Pay Back', 0.9863, 0.0137, 0.9863, 'single', NULL, '2025-12-27 23:37:46'),
+(2, 'Bobo', 'John Doe', 500000.00, 0.30, 720, 250000.00, 5.50, 'Male', 'Single', 'Bachelor\'s', 'Employed', 'Home', 'A1', 'Will Pay Back', 0.6128, 0.3872, 0.6128, 'batch', 'batch_1766878756980', '2025-12-27 23:39:17'),
+(3, 'Bobo', 'Jane Smith', 800000.00, 0.25, 680, 300000.00, 6.00, 'Female', 'Married', 'Master\'s', 'Self-Employed', 'Auto', 'B2', 'Will Pay Back', 0.9460, 0.0540, 0.9460, 'batch', 'batch_1766878756980', '2025-12-27 23:39:17'),
+(4, 'Bobo', 'Mark Brown', 30000.00, 0.40, 50, 15000000.00, 7.00, 'Male', 'Divorced', 'High School', 'Unemployed', 'Education', 'C1', 'Will Not Pay Back', 0.1047, 0.8953, 0.8953, 'batch', 'batch_1766878756980', '2025-12-27 23:39:17'),
+(5, 'Bobo', 'Lisa White', 600000.00, 0.20, 30, 200000.00, 5.00, 'Female', 'Single', 'Bachelor\'s', 'Employed', 'Business', 'B1', 'Will Pay Back', 0.6055, 0.3945, 0.6055, 'batch', 'batch_1766878756980', '2025-12-27 23:39:17'),
+(6, 'Bobo', 'Paul Green', 450000.00, 0.35, 710, 180000.00, 6.50, 'Male', 'Married', 'Master\'s', 'Employed', 'Other', 'C2', 'Will Pay Back', 0.7178, 0.2822, 0.7178, 'batch', 'batch_1766878756980', '2025-12-27 23:39:17');
 
 -- --------------------------------------------------------
 
@@ -146,7 +144,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `predictions`
 --
 ALTER TABLE `predictions`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `users`
